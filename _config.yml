@@ -14,9 +14,9 @@ timezone:
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Tunm Story # the main title
+title: Jingyu Yan # the main title
 
-tagline: This place holds some thoughts. # it will display as the sub-title
+tagline: CV engineer skilled in image and facial recognition, and audio signal processing. # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   Documenting and sharing some of my thoughts or quirky ideas.
