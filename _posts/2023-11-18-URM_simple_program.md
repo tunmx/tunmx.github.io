@@ -14,7 +14,7 @@ To verify the theories I have learned, I will use Python to implement a simple U
 
 ## 1. Infinite Register Machine
 
-An infinite register machine, commonly referred to as IRM, is a theoretical device characterized by the following properties:
+An infinite register machine, commonly referred to as URM, is a theoretical device characterized by the following properties:
 
 ### 1.1. Registers
 
