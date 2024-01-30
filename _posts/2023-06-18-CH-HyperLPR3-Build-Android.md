@@ -2,7 +2,7 @@
 title: "HyperLPR3车牌识别-Android使用：SDK编译与部署"
 date: 2023-06-18 12:12:51 +/-0800
 categories: [HyperLPR]
-tags: [CH]     # TAG names should always be lowercase
+tags: [CH, Computer Vision]     # TAG names should always be lowercase
 math: true
 image: https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/hyperlpr_logo_cl.png
 ---
