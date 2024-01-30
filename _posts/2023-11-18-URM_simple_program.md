@@ -2,7 +2,7 @@
 title: "Unlimited Register Machine: Simple Program Implementation"
 date: 2023-11-18 13:15:35 +/-0800
 categories: [Programming]
-tags: [URM, Computable Theory]     # TAG names should always be lowercase
+tags: [URM, Computability Theory]     # TAG names should always be lowercase
 math: true
 ---
 
@@ -14,9 +14,9 @@ To verify the theories I have learned, I will use Python to implement a simple U
 
 ## 1. Infinite Register Machine
 
-An infinite register machine, commonly referred to as IRM, is a theoretical device characterized by the following properties:
+An infinite register machine, commonly referred to as URM, is a theoretical device characterized by the following properties:
 
-### 1.1 Registers
+### 1.1. Registers
 
 An URM is equipped with an array of registers that can contain natural numbers: $$N = \{0, 1, 2, \ldots\}$$.
 
@@ -30,30 +30,30 @@ The registers are unlimited in two senses:
 1. While an URM program might employ a finite number of registers, there is no fixed maximum number that a particular URM program can use.
 2. There is no limit to the magnitude of natural numbers that can be stored in any of the registers.
 
-### 1.2 Program
+### 1.2. Program
 
 The values stored in a URM's registers are modified following a specific set of rules defined by a program. This program in a URM is comprised of a finite series of fundamental instructions.
 
-### 1.3 Operation
+### 1.3. Operation
 
 During the operation of a URM, the initial step involves executing the program's first instruction. After completing an instruction, the URM proceeds to the subsequent instruction for execution, except when a Jump instruction dictates a different course of action.
 
-### 1.4 Instruction Pointer
+### 1.4. Instruction Pointer
 
 The instruction pointer, often referred to as IP, is a conceptual marker in a URM that indicates the line number of the instruction set to be executed next. It functions akin to a specialized register within the URM, specifically designated to store this line number.
 
-### 1.5 Stage of Computation
+### 1.5. Stage of Computation
 
 The computational stage, or simply stage, of a URM program reflects the total number of instructions that have been executed up to that point. Consequently, each stage is equivalent to the execution of a single instruction.
 
-### 1.6 State
+### 1.6. State
 
 The state of a URM program at any given stage is characterized by the following elements:
 
 - The current value of the instruction pointer (IP).
 - The values held in all the registers that the URM program has utilized up to that stage.
 
-### 1.7 Input
+### 1.7. Input
 
 The input to a URM program is:
 either an ordered k-tuple (x1, x2, ..., xk) in N^k
@@ -66,15 +66,15 @@ That is, the initial state of the URM is: ∀i ∈ [1..k], ri = xi; and ∀i > k
 
 It is usual for the input (either all or part) to be overwritten during the course of the operation of a program. That is, at the end of a program, R1, R2, ..., Rk are not guaranteed still to contain x1, x2, ..., xk unless the program has been explicitly written so as to ensure that this is the case.
 
-### 1.8 Output
+### 1.8. Output
 
 At the end of the running of a URM program, the output will be found in register $$R_{0}$$.
 
-### 1.9 Null Program
+### 1.9. Null Program
 
 The null URM program is a URM program which contains no instructions. That is, a URM program whose length is zero.
 
-### 1.10 Instructions
+### 1.10. Instructions
 
 | Name      | Code   | Effect               | Explanation                                                    |
 |-----------|--------|----------------------|----------------------------------------------------------------|
@@ -92,7 +92,7 @@ The null URM program is a URM program which contains no instructions. That is, a
 
 In Python, I developed a URM (Unlimited Register Machine) simulator to validate the accuracy of my instructions. Key components of this implementation include several classes such as Instructions, Registers, URMSimulator, along with foundational operators for URM and various functions like size, haddr, normalize, concat, and reloc. However, these implementations are rudimentary and might contain some errors.
 
-### 2.1 Instructions
+### 2.1. Instructions
 Instructions represents a list of URM (Unlimited Register Machine) instructions.
 
 This class is used to store and manipulate a sequence of instructions for a URM simulator.
@@ -198,7 +198,7 @@ class Instructions(object):
 
 ```
 
-### 2.2 Registers
+### 2.2. Registers
 
 Registers represents a list of register values for a URM (Unlimited Register Machine).
 This class is used to store the state of the registers in a URM simulator.
@@ -393,7 +393,7 @@ class URMSimulator(object):
 
 ```
 
-### 2.4 Interface Design
+### 2.4. Interface Design
 
 We have designed some general interfaces for the URM simulator to more easily build URM instructions and simulate computational results.
 
@@ -542,7 +542,7 @@ def forward(param: Dict[int, int], initial_registers: Registers, instructions: I
 ```
 
 
-### 2.5 Example-1: sum(x, y): 
+### 2.5. Example-1: sum(x, y): 
 
 We have designed a URM program to perform the addition of two numbers: $$sum(x, y) = x + y$$, following the convention that $$R[0]$$ is for output, and $$R[1]$$ and $$R[3]$$ are for parameters. The maximum number of registers used in this program is 3. The program is as follows:
 
@@ -712,7 +712,7 @@ R0      R1      R2
 This is a simple case that helps us understand the common techniques used in URM (Unlimited Register Machine). By employing the method of accumulation, we implement the logic of sum.
 
 
-### 2.6 Example-2: fibb(): 
+### 2.6. Example-2: fibb(): 
 
 
 For this example, we will use the URM instruction set to design a URM program capable of implementing the Fibonacci function.
@@ -793,7 +793,7 @@ R0      R1      R2      R3      R4      R5
 
 This case verifies the result of the URM program's execution, in the scenario where fibb(10)=55.
 
-## Conclusion
+## 3. Conclusion
 
 
 The above documents my implementation of a URM simulator using Python, along with experiments on several simple cases.
