@@ -262,7 +262,7 @@ class Registers(object):
 
 ```
 
-### 2.3 URM Simulator
+### 2.3. URM Simulator
 
 Implementation scheme for simulating an Unlimited Register Machine, realizing the computational logic of four types of instructions: zero, successor, copy, and jump.
 
