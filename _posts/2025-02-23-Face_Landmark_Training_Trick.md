@@ -238,4 +238,8 @@ class LandmarkTwoHeadsResNet(nn.Module):
 最终关键点的MAE误差在左右，对于112x112的输入像素而言，平均误差大概在0.76个像素点。过多讨论数据集的val结果意义不大，因为标注质量和所遇的实际场景的差异性，通常现实中会遇到更多奇葩的问题。说白了这是一项目前数据质量的投入成本高于算法和模型本身的任务，起码对于目前研究现状来说，并没有看见非常显著有效的方案。
 
 
+## 移动端跟踪
 
+移动端的模型需要将模型进行蒸馏，整体架构与ResNet为backbone的模型没太大区别，把卷积层替换成Depthwise卷积或者直接使用MobileNets或ShuffleNets等轻量级的模型替换backbone，然后使用蒸馏的方式进行训练即可，基本上实时跟踪的速度在移动端上CPU上可以5ms一次的推理耗时。
+
+![mobile_tracking](https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/o-10.gif)
