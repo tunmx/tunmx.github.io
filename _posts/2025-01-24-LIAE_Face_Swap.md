@@ -1,6 +1,6 @@
 ---
 title: "LIAE架构人脸交换使用Pytorch实现"
-date: 2025-03-09 15:35:41 +/-0800
+date: 2025-01-24 15:35:41 +/-0800
 categories: [Programming]
 tags: [Face, Computer Vision, CH]     # TAG names should always be lowercase
 math: true
