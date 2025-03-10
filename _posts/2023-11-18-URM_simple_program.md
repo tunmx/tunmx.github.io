@@ -4,6 +4,7 @@ date: 2023-11-18 13:15:35 +/-0800
 categories: [Programming]
 tags: [URM, Computability Theory, EN]     # TAG names should always be lowercase
 math: true
+image: https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/v2-377e01e9b8a5e7a5ee856473555ec0c7_720w.webp
 ---
 
 ## 0. Intro
@@ -793,7 +794,15 @@ R0      R1      R2      R3      R4      R5
 
 This case verifies the result of the URM program's execution, in the scenario where fibb(10)=55.
 
-## 3. Conclusion
+## 3. Install the URM simulator
+
+If you want to use the URM simulator, you can install it using the following command:
+
+```bash
+pip install urm
+```
+
+## 4. Conclusion
 
 
 The above documents my implementation of a URM simulator using Python, along with experiments on several simple cases.
