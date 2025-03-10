@@ -286,9 +286,9 @@ class DSSIMLoss(nn.Module):
         return (1.0 - ssim_map.mean()) / 2.0
 ```
 
-## 训练
+## 训练结果
 
-训练的技巧保持与DeepFaceLab的训练技巧基本一致，使用DSSIMLoss监督生成图像过程的相似度，使用L1Loss监督五官部分的像素信号如鼻子嘴巴等，同时需要使用L2Loss监督生成的人脸区域像素和人脸区域的Mask。并且需要把五官部分的loss进行大比例加权，确保五官部位的生成质量。
+训练的技巧保持与DeepFaceLab官网实现的训练技巧和一些超参数基本一致，使用DSSIMLoss监督生成图像过程的相似度，使用L1Loss监督五官部分的像素信号如鼻子嘴巴等，同时需要使用L2Loss监督生成的人脸区域像素和人脸区域的Mask。并且需要把五官部分的loss进行大比例加权，确保五官部位的生成质量。
 
 以LIAE-UDT的结构为例，训练256分辨率的图像，代次数在58000时，第一阶段基本可以停止，通过历史数据可以看到处于收敛状态。根据生成的sample和loss调整一下参数后，继续训练第二阶段。
 ![loss](https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/loss.jpg)
