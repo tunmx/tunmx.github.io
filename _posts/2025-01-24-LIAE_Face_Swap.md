@@ -302,3 +302,4 @@ class DSSIMLoss(nn.Module):
 从生成效果来看SRC的重建和DST的生成效果均与DeepFaceLab的生成效果基本一致，尤其是一些脸部肌肉和光影效果在迭代较多次数后也趋近于较好的效果，由于目前手上只有一张闲置的3060 12G显卡，所以实验只能尝试到256的分辨率，有空尝试一下512的效果可能会遇到其他需要解决的问题。
 
 
+![iter](https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/out-5.gif)
