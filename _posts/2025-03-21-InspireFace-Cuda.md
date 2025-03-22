@@ -1,5 +1,5 @@
 ---
-title: "Inspireface Runs on NVIDIA Devices"
+title: "InspireFace Runs on NVIDIA Devices"
 date: 2025-03-20 23:15:35 +/-0800
 categories: [InspireFace]
 tags: [Face,Computer Vision, EN]     # TAG names should always be lowercase

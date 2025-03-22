@@ -1,5 +1,5 @@
 ---
-title: "Inspireface Runs on Rockchip Devices"
+title: "InspireFace Runs on Rockchip Devices"
 date: 2025-03-21 10:21:41 +/-0800
 categories: [InspireFace]
 tags: [Face,Computer Vision, EN]     # TAG names should always be lowercase
