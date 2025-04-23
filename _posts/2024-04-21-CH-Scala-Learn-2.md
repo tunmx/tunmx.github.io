@@ -4,7 +4,7 @@ date: 2024-04-21 08:51:09 +/-0800
 categories: [Programming]
 tags: [Scala, CH]     # TAG names should always be lowercase
 math: true
-image: https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/scala.jpeg
+image: https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/scala.jpeg
 ---
 
 ## 实现代码

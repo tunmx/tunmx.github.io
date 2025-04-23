@@ -4,7 +4,7 @@ date: 2023-06-18 05:11:24 +/-0800
 categories: [HyperLPR]
 tags: [CH, Computer Vision]     # TAG names should always be lowercase
 math: true
-image: https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/hyperlpr_logo_cl.png
+image: https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/hyperlpr_logo_cl.png
 ---
 
 
@@ -29,7 +29,7 @@ repositories {
 
 如图所示：
 
-![](https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/b2bf5d45f78c955e2be2efb1a5b8de15.png)
+![](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/b2bf5d45f78c955e2be2efb1a5b8de15.png)
 
 ## 从项目中导入hyperlpr-android-sdk
 
@@ -44,11 +44,11 @@ dependencies {
 
 如下图在app的工程中引入：
 
-![](https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/8a7d6651bd3373c8f16ffed7ca3fdc77.png)
+![](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/8a7d6651bd3373c8f16ffed7ca3fdc77.png)
 
 完成以上步骤后，点击Sync Now开始导入依赖包，由于依赖包有一定的体积，加上网络环境可能会较差，导包时间会较长：
 
-![](https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/e54fab2930c3770c399fb85216bbd945.png)
+![](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/e54fab2930c3770c399fb85216bbd945.png)
 
 ## 开始使用车牌识别SDK
 
@@ -91,12 +91,12 @@ for (Plate plate: plates) {
 
 如果你需要直接体验HyperLPR安卓版本的Demo，官网已经提供好了APK，只需[扫码下载](http://fir.tunm.top/hyperlpr)即可安装
 
-![https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/7a37b9ed636db9d7aebf5306b13fabe7.jpeg](https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/7a37b9ed636db9d7aebf5306b13fabe7.jpeg){: width="320" height="512" }
+![https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/7a37b9ed636db9d7aebf5306b13fabe7.jpeg](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/7a37b9ed636db9d7aebf5306b13fabe7.jpeg){: width="320" height="512" }
 
 ## 支持更丰富的车牌种类
 
 
-![](https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/f08da74501e9f3c6e40d0b33c32769d5.png)
+![](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/f08da74501e9f3c6e40d0b33c32769d5.png)
 
 
 ## 帮助

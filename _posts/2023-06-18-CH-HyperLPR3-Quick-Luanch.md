@@ -4,7 +4,7 @@ date: 2023-06-18 00:12:51 +/-0800
 categories: [HyperLPR]
 tags: [CH, Computer Vision]     # TAG names should always be lowercase
 math: true
-image: https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/hyperlpr_logo_cl.png
+image: https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/hyperlpr_logo_cl.png
 ---
 
 ## 简介
@@ -13,7 +13,7 @@ HyperLPR在2023年初已经更新到了v3的版本，该版本与先前的版本
 
 ### 支持多种类型车牌
 
-![](https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/f08da74501e9f3c6e40d0b33c32769d5.png)
+![](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/f08da74501e9f3c6e40d0b33c32769d5.png)
 
 ## 快速安装
 
@@ -27,7 +27,7 @@ python -m pip install hyperlpr3
 
 安装成功后，可以使用命令行工具对本地图像或在线url进行快速测试，这边我们使用一张新能源的车辆照片进行测试：
 
-![](https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/1a1268771092359caf44b6b8d0c41bd6.webp)
+![](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/1a1268771092359caf44b6b8d0c41bd6.webp)
 
 ```bash
 lpr3 sample -src https://image.xcar.com.cn/attachments/a/day_170125/2017012516_5cb21721d2f35a0f2984HCOTsEuQ6jwg.jpg
@@ -52,7 +52,7 @@ lpr3 rest --port 8715 --host 0.0.0.0 --workers 1
 
 启动后可打开SwaggerUI的路径：http://localhost:8715/api/v1/docs 查看和测试在线识别API服务:
 
-![](https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/3e08c269e9d639288073104fcff4c786.png)
+![](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/3e08c269e9d639288073104fcff4c786.png)
 
 启动后即可对车牌识别Api进行使用
 
@@ -125,7 +125,7 @@ cv2.waitKey(0)
 
 绘制结果如下：
 
-![](https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/5745fb9a5900442c30f0812bda0820c7.png)
+![](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/5745fb9a5900442c30f0812bda0820c7.png)
 
 ## 帮助
 

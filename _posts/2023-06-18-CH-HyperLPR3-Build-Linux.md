@@ -4,7 +4,7 @@ date: 2023-06-18 02:54:53 +/-0800
 categories: [HyperLPR]
 tags: [CH]     # TAG names should always be lowercase
 math: true
-image: https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/hyperlpr_logo_cl.png
+image: https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/hyperlpr_logo_cl.png
 ---
 
 
@@ -14,7 +14,7 @@ HyperLPR在2023年初已经更新到了v3的版本，该版本与先前的版本
 
 ### 支持多种类型车牌
 
-![](https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/f08da74501e9f3c6e40d0b33c32769d5.png)
+![](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/f08da74501e9f3c6e40d0b33c32769d5.png)
 
 ## Linux C/C++库说明
 

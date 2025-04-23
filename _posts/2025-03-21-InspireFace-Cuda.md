@@ -4,7 +4,7 @@ date: 2025-03-20 23:15:35 +/-0800
 categories: [InspireFace]
 tags: [Face,Computer Vision, EN]     # TAG names should always be lowercase
 math: true
-image: https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/cuda.png
+image: https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/cuda.png
 ---
 ## CUDA and TensorRT Version Information
 

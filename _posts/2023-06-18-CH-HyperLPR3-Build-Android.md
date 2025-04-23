@@ -4,7 +4,7 @@ date: 2023-06-18 12:12:51 +/-0800
 categories: [HyperLPR]
 tags: [CH, Computer Vision]     # TAG names should always be lowercase
 math: true
-image: https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/hyperlpr_logo_cl.png
+image: https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/hyperlpr_logo_cl.png
 ---
 
 
@@ -19,7 +19,7 @@ HyperLPR3的官方源码已经提供在Android平台下使用该项目SDK的方�
 
 ### 支持多种类型车牌
 
-![](https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/f08da74501e9f3c6e40d0b33c32769d5.png)
+![](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/f08da74501e9f3c6e40d0b33c32769d5.png)
 
 ## 编译源码的准备工作
 
@@ -162,7 +162,7 @@ cp -r YOUR_PATH/HyperLPR/build/release_android/arm* hyperlpr3-android-sdk/hyperl
 
 点击Run即可构建工程并编译后部署到测试机上进行运行。
 
-![https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/7a37b9ed636db9d7aebf5306b13fabe7.jpeg](https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/7a37b9ed636db9d7aebf5306b13fabe7.jpeg){: width="320" height="512" }
+![https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/7a37b9ed636db9d7aebf5306b13fabe7.jpeg](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/7a37b9ed636db9d7aebf5306b13fabe7.jpeg){: width="320" height="512" }
 
 Demo有两种测试方式：实测后置相机采集与相册图片测试
 

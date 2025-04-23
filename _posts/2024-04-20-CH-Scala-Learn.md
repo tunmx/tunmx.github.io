@@ -4,7 +4,7 @@ date: 2024-04-20 04:35:41 +/-0800
 categories: [Programming]
 tags: [Scala, CH]     # TAG names should always be lowercase
 math: true
-image: https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/scala.jpeg
+image: https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/scala.jpeg
 ---
 
 近期学校开设了Scala语言的课程，并且老师布置了相关作业，我对这门课学习的质量和动力全靠老师的负责程度，感叹一下，国外老师是真的认真，作业提交均需要在github上建立仓库，并且每次作业都需要创建一个PR，然后老师会进行review，如果通过则合并到主分支，否则提出修改意见，学生再进行修改，如此反复，直到通过为止。学习这门语言给我带了极大的痛苦，因为这门语言的语法和Python、Java、C/C++、JavaScript等语言的语法差异非常大。

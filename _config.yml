@@ -70,7 +70,7 @@ theme_mode: # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn: https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/
+img_cdn: https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/
 
 # the avatar on sidebar, support local or CORS resources
 avatar: github_avatar.jpeg

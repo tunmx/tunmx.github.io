@@ -4,7 +4,7 @@ date: 2025-02-23 13:15:35 +/-0800
 categories: [Programming]
 tags: [Face,Computer Vision, CH]     # TAG names should always be lowercase
 math: true
-image: https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/WX20250310-131443.png
+image: https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/WX20250310-131443.png
 ---
 
 ## 2D人脸关键点
@@ -40,7 +40,7 @@ class WingLoss(nn.Module):
 
 我们把各个常见的loss使用一组数据进行可视化，对比wingloss的方案，结果如下：
 
-![loss_visualization](https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/lm_loss.png)
+![loss_visualization](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/lm_loss.png)
 
 
 这个wingloss的曲线从视觉上来看是一种有目的的定制化复合函数，看似是为了解决在训练的不同阶段中遇到的某些问题，但是实际上我在经过多次的实验中，无论是回归点的精度还是稳定程度，wingloss在与MAE进行对比始终没有显著的效果提升，而且有多次出现MAE精度效果比wingloss更好，这可能与数据集的分布、关键点数量、数据集质量、模型复杂度、训练策略、推理速度要求等都有关系。
@@ -171,7 +171,7 @@ class KeypointAugmentor:
 
 我的需求有检测一些非自然光的一些人脸关键点，如UV灯、蓝光、荧光灯等，所以会对数据进行一些特殊的光照处理：
 
-![data_augmentation](https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/lmk_gen.png)
+![data_augmentation](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/lmk_gen.png)
 
 ## 特殊的训练技巧
 
@@ -232,7 +232,7 @@ class LandmarkTwoHeadsResNet(nn.Module):
 
 因为我个人的标注数据总量并不多，尤其是在眼部、嘴部和眉毛等位置的数据太少，所以我依靠网络公开数据集的点与自主标注的轮廓点进行一定的组合，在经过600个epoch迭代后，最终效果如下：
 
-![landmark_two_heads](https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/lmk_rest.png)
+![landmark_two_heads](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/lmk_rest.png)
 
 
 最终关键点的MAE误差在左右，对于112x112的输入像素而言，平均误差大概在0.76个像素点。过多讨论数据集的val结果意义不大，因为标注质量和所遇的实际场景的差异性，通常现实中会遇到更多奇葩的问题。说白了这是一项目前数据质量的投入成本高于算法和模型本身的任务，起码对于目前研究现状来说，并没有看见非常显著有效的方案。
@@ -242,4 +242,4 @@ class LandmarkTwoHeadsResNet(nn.Module):
 
 移动端的模型需要将模型进行蒸馏，整体架构与ResNet为backbone的模型没太大区别，把卷积层替换成Depthwise卷积或者直接使用MobileNets或ShuffleNets等轻量级的模型替换backbone，然后使用蒸馏的方式进行训练即可，基本上实时跟踪的速度在移动端上CPU上可以5ms一次的推理耗时。
 
-![mobile_tracking](https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/o-10.gif)
+![mobile_tracking](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/o-10.gif)

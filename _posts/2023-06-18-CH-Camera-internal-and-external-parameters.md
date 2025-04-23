@@ -4,7 +4,7 @@ date: 2023-08-13 23:21:45 +/-0800
 categories: [Algorithm]
 tags: [CH, Computer Vision]     # TAG names should always be lowercase
 math: true
-image: https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/WX20240130-135157.png
+image: https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/WX20240130-135157.png
 ---
 
 学习人脸3D重建的第一天，在首次接触3D相关的内容，必须要搞清楚相机的成像原理，如何将真实三维空间中的三维点与显示器、屏幕和图像等二维成像的平面映射，以及了解该过程的推导方式和相关坐标系的换算，如像素坐标，图像坐标，相机坐标以及世界坐标这四种关系的变换。
@@ -20,7 +20,7 @@ image: https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/WX20240130-1
 - 相机坐标系（3D）：以光心中心点$$O$$为原点，建立$$O-X-Y-Z$$三维坐标系；
 - 图像坐标系（2D）：以被投射的平面中$$O^{'}$$为原点，建立$$O^{'}-X^{'}-Y^{'}$$二维坐标系。
 
-![](https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/526acf8889a98ad7661caa3a65a75777.jpeg)
+![](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/526acf8889a98ad7661caa3a65a75777.jpeg)
 
 从图所示，取真实世界中的任意一点$P$通过相机的光心$O$点映射到成像平面上的点$$P^{'}$$，其中我们令点$$P=\left[\begin{array}{c}
 x  \\
@@ -32,7 +32,7 @@ y^{'}  \\
 z^{'} 
 \end{array}\right]$$，这边比较特殊，将成像的平面与光点的距离记为f，即为像距，所以可以用以下图表示坐标系和映射点之间的关系：
 
-![](https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/33323f8a4e837209d63b961853f4f348.jpeg)
+![](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/33323f8a4e837209d63b961853f4f348.jpeg)
 
 通过上图相似三角形关系可以得出以下关系式：
 $$\frac{z}{f}=-\frac{x}{x^{'}}=-\frac{y}{y^{'}}$$
@@ -341,7 +341,7 @@ display_vertices_uv(vertices_uv, canvas_size=(canvas_square_size, canvas_square_
 
 结果如下：
 
-![](https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/12cdce12eb3fa0f105b4db3f4a04739d.png)
+![](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/12cdce12eb3fa0f105b4db3f4a04739d.png)
 
 可以看到我们已经成功的使用自己定义的模拟相机内外参去对该立方体进行世界坐标转换到像素坐标，并成功可视化观测到这个立方体。
 这里我们将相机通过外参矩阵R的形式设置的是把相机摆放在一个以roll转角45度的观测角度，为了以更加丰富的角度观测到这个立方体，我们可以在roll转角45度的情况下，再加入另外一种欧拉角属性pitch，使其可以添加一种新的角度去观测该对象，代码如下：
@@ -367,7 +367,7 @@ display_vertices_uv(vertices_uv_pitch)
 
 通过代码可得知我们在重新定义了一个外参矩阵R，是将之前定义的外参矩阵R_roll与当前新定义的R_pitch进行一个线性变换处理所得出的结果，其目的是让机位角在roll轴旋转45度的情况下再对其pitch轴旋转25度，得出该外参矩阵并进行坐标转换，结果如下：
 
-![](https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/8561f4482b182b2e64c3ff14c0693b71.png)
+![](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/8561f4482b182b2e64c3ff14c0693b71.png)
 
 可以看到我们能观测到的立方体视角更加丰富了.
 
@@ -452,7 +452,7 @@ while True:
 
 结果如下:
 
-![](https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/12fcac9912e850411c2cd924b0ae3969.gif)
+![](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/12fcac9912e850411c2cd924b0ae3969.gif)
 
 ### 完整代码：
 

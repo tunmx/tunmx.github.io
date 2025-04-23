@@ -4,7 +4,7 @@ date: 2025-03-21 10:21:41 +/-0800
 categories: [InspireFace]
 tags: [Face,Computer Vision, EN]     # TAG names should always be lowercase
 math: true
-image: https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/logo04_s.png
+image: https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/logo04_s.png
 ---
 ## Rockchip Device Compatibility Status
 

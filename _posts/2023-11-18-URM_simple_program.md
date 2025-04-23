@@ -4,7 +4,7 @@ date: 2023-11-18 13:15:35 +/-0800
 categories: [Programming]
 tags: [URM, Computability Theory, EN]     # TAG names should always be lowercase
 math: true
-image: https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/v2-377e01e9b8a5e7a5ee856473555ec0c7_720w.webp
+image: https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/v2-377e01e9b8a5e7a5ee856473555ec0c7_720w.webp
 ---
 
 ## 0. Intro

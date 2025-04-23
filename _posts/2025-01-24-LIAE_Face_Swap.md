@@ -4,7 +4,7 @@ date: 2025-01-24 15:35:41 +/-0800
 categories: [Programming]
 tags: [Face, Computer Vision, CH]     # TAG names should always be lowercase
 math: true
-image: https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/swap.png
+image: https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/swap.png
 ---
 
 尝试使用Pytorch模仿[DeepFaceLab](https://github.com/iperov/DeepFaceLab)的LIAE架构，做一个简单的人脸面部交换实验。原本的DeepFaceLab是使用TensorFlow实现的，并且包含了大量的开箱即用的工具，包括从数据预处理、模型训练、模型测试、模型推理、人脸预处理工具箱、交互式更换人脸GUI等等一套完整的在线和离线人脸素材交换工具所组成。所以项目本身非常庞大，所以此次任务只抽离出神经网络的部分，使用Pytorch实现，仅使用到DeepFaceLab的数据生成器。
@@ -17,7 +17,7 @@ LIAE框架的核心思想是将输入图像编码到潜在空间，然后在潜�
 
 与其他Encoder-Decoder架构相比，LIAE的编解码器结构本质上跟其他项目是差不多的，只是在整体结构上的潜在空间处理机制不同。
 
-![LIAE](https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/WX20250310-104621.png)
+![LIAE](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/WX20250310-104621.png)
 
 LIAE架构中通常设计中包含了2个Inter潜在信息模块，分别是InterB和InterAB，它们的与编解码器组合的Pipeline计算如下：
 
@@ -291,15 +291,15 @@ class DSSIMLoss(nn.Module):
 训练的技巧保持与DeepFaceLab官网实现的训练技巧和一些超参数基本一致，使用DSSIMLoss监督生成图像过程的相似度，使用L1Loss监督五官部分的像素信号如鼻子嘴巴等，同时需要使用L2Loss监督生成的人脸区域像素和人脸区域的Mask。并且需要把五官部分的loss进行大比例加权，确保五官部位的生成质量。
 
 以LIAE-UDT的结构为例，训练256分辨率的图像，代次数在58000时，第一阶段基本可以停止，通过历史数据可以看到处于收敛状态。根据生成的sample和loss调整一下参数后，继续训练第二阶段。
-![loss](https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/loss.jpg)
+![loss](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/loss.jpg)
 
 在经历了100000多次的迭代后loss基本稳定，训练效果如下：
 
-![sample](https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/106800.jpg)
+![sample](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/106800.jpg)
 
-![sample](https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/202700.jpg)
+![sample](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/202700.jpg)
 
 从生成效果来看SRC的重建和DST的生成效果均与DeepFaceLab的生成效果基本一致，尤其是一些脸部肌肉和光影效果在迭代较多次数后也趋近于较好的效果，由于目前手上只有一张闲置的3060 12G显卡，所以实验只能尝试到256的分辨率，有空尝试一下512的效果可能会遇到其他需要解决的问题。
 
 
-![iter](https://tunm-resource.oss-cn-hongkong.aliyuncs.com/blogs_box/out-5.gif)
+![iter](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/out-5.gif)
