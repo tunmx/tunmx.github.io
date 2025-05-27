@@ -1,5 +1,5 @@
 ---
-title: "自定义轻量化计算机视觉库"
+title: "InspireCV-自定义轻量化CV库"
 date: 2025-05-01 02:45:02 +/-0800
 categories: [Programming]
 tags: [Face, Computer Vision, CH]     # TAG names should always be lowercase
