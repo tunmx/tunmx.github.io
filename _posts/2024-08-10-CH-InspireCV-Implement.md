@@ -4,7 +4,7 @@ date: 2025-05-01 02:45:02 +/-0800
 categories: [Programming]
 tags: [Face, Computer Vision, CH]     # TAG names should always be lowercase
 math: true
-image: https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/docs/cv2.jpg
+image: https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/docs/feature/fbanner.jpg
 ---
 
 ## InspireCV的实现
