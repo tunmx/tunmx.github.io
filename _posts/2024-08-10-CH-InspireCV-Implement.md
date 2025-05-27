@@ -14,7 +14,7 @@ image: https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/docs/feature
 
 - 项目地址：[InspireCV](https://github.com/tunmx/InspireCV)
 
-InspireCV在一些特殊的硬件会加入一些提升速度的尝试，例如使用**Rockchip RGA**的方式利用DMA加速2D图像的处理等，最终目的是让用户可以最轻的进行多平台移植CV项目，并同时兼顾性能和处理结果。
+**InspireCV**除了在Arm设备上加入NEON提升处理速度以外，还会在一些特殊的硬件会加入一些提升速度的尝试，例如使用**Rockchip RGA**的方式利用DMA加速2D图像的处理等，最终目的是让用户可以最轻的进行多平台移植CV项目，并同时兼顾性能和处理结果。
 
 
 ![InspireCV](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/docs/cv2.jpg)
