@@ -86,3 +86,8 @@ image → Backbone → 热图 → DSNT(可微) → 坐标
 # - 整个系统针对最终目标（坐标精度）优化
 ```
 
+## 网络结构
+
+考虑移动端实时需求，网络直接使用mobilenet，参考fpn的结构，把不同尺度的特征图谱用来连接上采样层进行一定的特征融合：
+
+![](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/sketch.png)
