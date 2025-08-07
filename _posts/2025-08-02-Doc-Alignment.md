@@ -343,7 +343,7 @@ def heatmap_decode(heatmaps, normalized_coordinates=True):
 
 可以明显的看到四个角点在分别对应的四个通道上都有热力信息，通过DSNT解码后即可获取到具体的坐标点：
 
-![](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/predict_val_133000.jpg)
+![](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/background01_datasheet001_0001_result.jpg)
 
 ## 训练结果
 
