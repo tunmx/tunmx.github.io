@@ -347,3 +347,10 @@ def heatmap_decode(heatmaps, normalized_coordinates=True):
 
 ## 训练结果
 
+这边准备了一批纸质文档拍照的数据集进行训练，大概经过了10万次的迭代后，得到了还不错的效果：
+
+![](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/106800.jpg)
+
+训练过程中开启了一些较为复杂数据增强，导致train loss会比val loss高非常多。
+
+不过这种方案其实缺陷还是挺大的，对业务场景要求较高，比如只能允许目标在画面中，如果四个角点其中一个在画面外效果就会变差，还有四个角点的顺序纯在一定的语义信息绑定，在做一些旋转方案的信息需要注意预测失败的情况。
