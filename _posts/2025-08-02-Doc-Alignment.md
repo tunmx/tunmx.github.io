@@ -49,3 +49,40 @@ $$\frac{\partial \hat{x}}{\partial H} = \frac{\partial}{\partial H}\left[\sum P(
 通过 softmax 的导数和链式法则，梯度可以传播回去：
 
 $$\frac{\partial L}{\partial H} = P \cdot \left[(x - \hat{x})\frac{\partial L}{\partial \hat{x}} + (y - \hat{y})\frac{\partial L}{\partial \hat{y}}\right]$$
+
+![](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/wechat_2025-08-07_095141_143.png)
+
+## Pipeline流程
+
+流程结构比较简单，与相对传统的方案去对比：
+
+- 传统后处理方案：
+
+```
+# 训练流程
+image → Backbone → 热图 → argmax(不可微) → 坐标
+                    ↑                          ↓
+                 监督信号                    坐标损失
+              （热图损失）                 （无法传回去）
+
+# 问题：
+# - 必须用热图标签来监督
+# - backbone学到的是"如何生成好看的热图"
+# - 而不是"如何生成能准确定位的热图"
+```
+
+- DSNT后处理方案：
+
+```
+# 训练流程  
+image → Backbone → 热图 → DSNT(可微) → 坐标
+                    ↑                    ↓
+                    ←←←←←←←←←←←←←←← 坐标损失
+                 （梯度可以传回来）
+
+# 优势：
+# - 直接用坐标标签监督
+# - backbone学到的是"如何生成能准确转换成坐标的热图"
+# - 整个系统针对最终目标（坐标精度）优化
+```
+
