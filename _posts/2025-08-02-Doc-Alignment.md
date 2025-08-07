@@ -349,7 +349,7 @@ def heatmap_decode(heatmaps, normalized_coordinates=True):
 
 这边准备了一批纸质文档拍照的数据集进行训练，大概经过了10万次的迭代后，得到了还不错的效果：
 
-![](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/106800.jpg)
+![](https://inspireface-1259028827.cos.ap-singapore.myqcloud.com/blogs_box/predict_val_133000.jpg)
 
 训练过程中开启了一些较为复杂数据增强，导致train loss会比val loss高非常多。
 
