@@ -215,7 +215,20 @@ class DocLocationNet(nn.Module):
 DSNT的decoder代码如下：
 
 ```python
-
+class HeatmapToCoords(nn.Module):
+    """
+    Differentiable Spatial to Numerical Transform Module
+    """
+    def __init__(self, normalized_coordinates=True):
+        super(HeatmapToCoords, self).__init__()
+        self.normalized_coordinates = normalized_coordinates
+    
+    def forward(self, heatmaps):
+        """
+        Use marginalization strategy to avoid creating large arrays
+        """
+        spatial_dims = heatmaps.size()[2:]
+        
         # Generate coordinate vectors (not grids)
         if self.normalized_coordinates:
             coords_1d = []
